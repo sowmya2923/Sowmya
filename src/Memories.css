@@ -1,0 +1,86 @@
+.memories-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff0f5, #ffe6f2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.memories-title {
+  font-size: 2.5rem;
+  color: #ff1493;
+  margin-bottom: 50px;
+}
+
+.memories-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.memory-card {
+  position: relative;
+  width: 320px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.25);
+  transition: 0.4s ease;
+}
+
+.memory-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.memory-card h3 {
+  color: #ff4d88;
+  margin-bottom: 10px;
+}
+
+.year-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4d88;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.next-btn {
+  margin-top: 60px;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 30px;
+  background: #ff4d88;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #ff1a66;
+  transform: scale(1.08);
+}
+
+.card-img-top {
+  height: 200px;       /* controls image height */
+  object-fit: cover;   /* prevents stretching */
+}
+.big-emoji {
+  font-size: 60px;   /* increase size */
+}
+.card-text {
+  min-height: 50px;   /* keeps text area balanced */
+}
+
+
+

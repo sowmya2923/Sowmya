@@ -1,0 +1,102 @@
+.forever-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Image Section */
+.image-section img {
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+/* Text Section */
+.text-section {
+  max-width: 500px;
+  color: #7a004d;
+}
+
+.text-section h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #c2185b;
+}
+
+.text-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 6px 0;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  color: #e91e63;
+}
+
+.text-section h4 {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #ad1457;
+}
+
+/* Floating Image Animation */
+@keyframes floatImage {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Page Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Floating Hearts */
+.forever-container::before,
+.forever-container::after {
+  content: "💖 💕 💗 💓";
+  position: absolute;
+  font-size: 24px;
+  animation: floatHearts 10s linear infinite;
+  opacity: 0.4;
+}
+
+.forever-container::before {
+  left: 5%;
+  top: 100%;
+}
+
+.forever-container::after {
+  right: 5%;
+  top: 120%;
+  animation-delay: 5s;
+}
+
+@keyframes floatHearts {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+  }
+}
+.forever-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

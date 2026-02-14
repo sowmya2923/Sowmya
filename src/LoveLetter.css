@@ -1,0 +1,26 @@
+.letter-page {
+  height: 100vh;
+  background: linear-gradient(to right, #fff0f5, #ffe6f0);
+}
+
+.letter-card {
+    position: relative;
+z-index: 2;
+
+  width: 60%;
+  max-width: 700px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1s ease;
+  opacity: 0;
+}
+
+.letter-card.open {
+  transform: scaleY(1);
+  opacity: 1;
+}
