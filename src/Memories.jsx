@@ -78,7 +78,7 @@ const Memories = () => {
       <div className="text-center mt-4">
         <button
           className="btn btn-danger px-4"
-          onClick={() => navigate("/together")}
+          onClick={() => navigate("/songslide")}
         >
           Memories in My Heart 💌
         </button>
